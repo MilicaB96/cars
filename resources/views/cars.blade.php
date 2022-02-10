@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('title','Cars')
 @section('content')
-<ul>
+<ul class="list-group list-group-flush">
             @foreach ($cars as $car)
-               <a class="link-secondary" href="/cars/{{$car->id}}"> <li>{{$car->title}}</li></a>
+               <a class="text-decoration-none" href="/cars/{{$car->id}}"> <li class="list-group-item" >{{$car->title}}</li></a>
             @endforeach
         </ul>
 @endsection 
