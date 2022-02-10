@@ -8,12 +8,10 @@
 </head>
 <body>
     <div>
-        <ul>
-            <h1>Cars:</h1>
-            @foreach ($cars as $car)
-               <a href="/cars/{{$car->id}}"> <li>{{$car->title}}</li></a>
-            @endforeach
-        </ul>
+        <h1>{{$cars->title}}</h1>
+        <p>Produced by {{$cars->producer}}
+        </p>
+        <p>Door number is {{$cars->number_of_doors}}</p>
     </div>
 </body>
 </html>
