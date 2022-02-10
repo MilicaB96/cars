@@ -8,10 +8,10 @@
 </head>
 <body>
     <div>
-        <h1>{{$cars->title}}</h1>
-        <p>Produced by {{$cars->producer}}
+        <h1>{{$car->title}}</h1>
+        <p>Produced by {{$car->producer}}
         </p>
-        <p>Door number is {{$cars->number_of_doors}}</p>
+        <p>Door number is {{$car->number_of_doors}}</p>
     </div>
 </body>
 </html>
