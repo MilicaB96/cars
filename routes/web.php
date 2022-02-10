@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CarsController;
 use Illuminate\Support\Facades\Route;
 use PHPUnit\Framework\RiskyTestError;
 
@@ -22,3 +23,4 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+Route::get('/cars', [CarsController::class, 'index']);
